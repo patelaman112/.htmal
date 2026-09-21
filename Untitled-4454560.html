@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Food Section</title>
+
+
+
+<style>
+
+    body {
+
+        margin: 0;
+
+        font-family: Arial, sans-serif;
+
+        background: #f5f5f5;
+
+    }
+
+
+
+    .hero-container {
+
+        display: flex;
+
+        justify-content: center;
+
+        align-items: center;
+
+        height: 48vh;
+
+    }
+
+
+
+    .hero-box {
+
+        background: linear-gradient(135deg, #ff7e5f, #feb47b);
+
+        padding: 40px 60px;
+
+        border-radius: 15px;
+
+        text-align: center;
+
+        box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+
+        max-width: 900px;
+
+        width: 90%;
+
+        background-image:
+
+    }
+
+
+
+    .location-tag {
+
+        display: inline-block;
+
+        background: rgba(255,255,255,0.2);
+
+        padding: 8px 15px;
+
+        border-radius: 20px;
+
+        font-weight: bold;
+
+        margin-bottom: 15px;
+
+        color: #fff;
+
+    }
+
+
+
+    h1 {
+
+        margin: 20px 0;
+
+        font-size: 28px;
+
+        font-weight: bold;
+
+        color: #fff;
+
+    }
+
+
+
+    p {
+
+        font-size: 18px;
+
+        font-weight: 600;
+
+        color: #fff;
+
+    }
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+
+<div class="hero-container">
+
+    <div class="hero-box">
+
+        <div style="color: rgb(199, 231, 15); font-weight: bold; font-size: 40px; margin-bottom: 8px;">
+
+            Love Restaurant
+
+        </div>
+
+        <span class="location-tag">Machhali Shahar, Jaunpur</span>
+
+        <h1>Swadisht Khana, Seedha Aapke Ghar</h1>
+
+        <p>Order karein aur 30 minute mein delivery payein!</p>
+
+    </div>
+
+</div>
+
+
+
+</body>
+
+</html>
+
+<html lang="hi">
+
+<head>
+
+    <meta charset="UTF-
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   
+
+    <style>
+
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; scroll-behavior: smooth; background-color: #fcfcfc; }
+
+        header { background: #e63946; color: white; padding: 15px 0; position: fixed; width: 100%; top: 0; z-index: 1000; text-align: center; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+
+        .hero { height: 40vh; background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvlnOYOU1xi7wLfGJKmotqAuBXv6F3Id22sw&s") center/cover; display: flex; flex-direction: column; justify-content: center; align-items: center; color: white; text-align: center; margin-top: 50px; }
+
+       
+
+        .search-container { margin: 20px auto; text-align: center; padding: 0 20px; }
+
+        #menuSearch { width: 100%; max-width: 500px; padding: 12px 20px; border-radius: 25px; border: 2px solid #e63946; font-size: 16px; outline: none; }
+
+
+
+        .menu-title { margin: 20px 0; font-size: 28px; color: #1d3557; text-align: center; }
+
+        .container { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 20px; max-width: 1200px; margin: 0 auto; }
+
+
+
+        .item-card { background: white; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); width: 280px; overflow: hidden; text-align: center; border-bottom: 4px solid #e63946; transition: 0.3s; }
+
+        .item-card:hover { transform: translateY(-5px); }
+
+        .item-card img { width: 100%; height: 180px; object-fit: cover; background-color: #eee; }
+
+        .item-info { padding: 15px; }
+
+        .price { font-size: 18px; color: #e63946; font-weight: bold; margin: 10px 0; }
+
+       
+
+        .order-btn { background: #25D366; color: white; text-decoration: none; padding: 10px 15px; border-radius: 50px; display: inline-block; font-weight: bold; font-size: 13px; transition: 0.3s; }
+
+        .order-btn:hover { background: #128C7E; }
+
+
+
+        footer { background: #1d3557; color: white; padding: 40px 20px; text-align: center; margin-top: 50px; }
+
+        .location-tag { background: #f1faee; color: #1d3557; padding: 5px 15px; border-radius: 20px; font-size: 14px; font-weight: bold; }
+
+    </style>
+
+</head>
+
+<body>
+
+
+
+
+
+    <div class="search-container">
+
+        <input type="text" id="menuSearch" placeholder="Search dish name (e.g. Pizza, Paneer...)" onkeyup="searchMenu()">
+
+    </div>
+
+
+
+    <h2 class="menu-title">Hamara Menu (30 Varieties)</h2>
+
+
+
+    <div class="container" id="menuItems">
+
+        <div class="item-card">
+
+            <img src="https://salasdaily.com/cdn/shop/products/doublecheeseburstpizza_460x@2x.jpg?v=1669967224" alt="Pizza">
+
+            <div class="item-info"><h3>Cheese Burst Pizza</h3><div class="price">₹199</div><a href="https://wa.me/916387951093?text=Order: Cheese Burst Pizza" class="order-btn">Order on WhatsApp</a></div>
+
+        </div>
+
+
+
+        <div class="item-card">
+
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/059/003/702/small/a-plate-of-chicken-biryani-with-carrots-and-parsley-photo.jpg" alt="Biryani">
+
+            <div class="item-info"><h3>Hyderabadi Biryani</h3><div class="price">₹249</div><a href="https://wa.me/916387951093?text=Order: Hyderabadi Biryani" class="order-btn">Order on WhatsApp</a></div>
+
+        </div>
+
+
+
+        <div class="item-card">
+
+            <img src="https://ministryofcurry.com/wp-content/uploads/2021/01/Paneer-Tikka_-2-1.jpg" alt="Paneer">
+
+            <div class="item-info"><h3>Paneer Tikka Masala</h3><div class="price">₹180</div><a href="https://wa.me/916387951093?text=Order: Paneer Tikka" class="order-btn">Order on WhatsApp</a></div>
+
+        </div>
+
+
+
+        <div class="item-card">
+
+            <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=400" alt="Burger">
+
+            <div class="item-info"><h3>Veg Maharaja Burger</h3><div class="price">₹99</div><a href="https://wa.me/916387951093?text=Order: Burger" class="order-btn">Order on WhatsApp</a></div>
+
+        </div>
+
+
+
+        <div class="item-card">
+
+            <img src="https://images.unsplash.com/photo-1585032226651-759b368d7246?w=400" alt="Noodles">
+
+            <div class="item-info"><h3>Hakka Noodles</h3><div class="price">₹120</div><a href="https://wa.me/916387951093?text=Order: Noodles" class="order-btn">Order on WhatsApp</a></div>
+
+        </div>
+
+
+
+        <div class="item-card">
+
+            <img src="https://www.shutterstock.com/image-photo/chole-bhature-chick-pea-curry-600nw-2532258639.jpg" alt="Chhole Bhature">
+
+            <div class="item-info"><h3>Chhole Bhature</h3><div class="price">₹80</div><a href="https://wa.me/916387951093?text=Order: Chhole Bhature" class="order-btn">Order</a></div>
+
+        </div>
+
+
+
+        <div class="item-card">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQJqkbzZy78QS-DErP6QJ3qMbbGcRASnNTMw&s" alt="Dosa">
+
+            <div class="item-info"><h3>Masala Dosa</h3><div class="price">₹110</div><a href="https://wa.me/916387951093?text=Order: Dosa" class="order-btn">Order</a></div>
+
+        </div>
+
+
+
+        <div class="item-card">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlkFd6tFkdSgliBDWB_YAmznZGdkAvYvT9lQ&s" alt="Gulab Jamun">
+
+            <div class="item-info"><h3>Gulab Jamun (2pc)</h3><div class="price">₹40</div><a href="https://wa.me/916387951093?text=Order: Gulab Jamun" class="order-btn">Order</a></div>
+
+        </div>
+
+
+
+        <div class="item-card">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz3N38vUstZYbH1dO3xNXG6DtZJEMIonF8_A&s" alt="Coffee">
+
+            <div class="item-info"><h3>Cold Coffee</h3><div class="price">₹70</div><a href="https://wa.me/916387951093?text=Order: Cold Coffee" class="order-btn">Order</a></div>
+
+        </div>
+
+
+
+        <div class="item-card">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCO9FqmSMQaSIUpdusOg5AIlqKf3lXH13Afw&s" alt="Manchurian">
+
+            <div class="item-info"><h3>Veg Manchurian</h3><div class="price">₹140</div><a href="https://wa.me/916387951093?text=Order: Manchurian" class="order-btn">Order</a></div>
+
+        </div>
+
+
+
+        <div class="item-card">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCnrz4-QPq10DZN1kHeJII6n-ETvwnGLTDvA&s" alt="Butter Chicken">
+
+            <div class="item-info"><h3>Butter Chicken</h3><div class="price">₹320</div><a href="https://wa.me/916387951093?text=Order: Butter Chicken" class="order-btn">Order</a></div>
+
+        </div>
+
+
+
+        <div class="item-card">
+
+            <img src="https://www.shutterstock.com/image-photo/dal-makhani-indian-vegetarian-black-600nw-2244690977.jpg" alt="Dal">
+
+            <div class="item-info"><h3>Dal Makhani</h3><div class="price">₹160</div><a href="https://wa.me/916387951093?text=Order: Dal Makhani" class="order-btn">Order</a></div>
+
+        </div>
+
+
+
+        <div class="item-card">
+
+            <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=400" alt="Fries">
+
+            <div class="item-info"><h3>French Fries</h3><div class="price">₹70</div><a href="https://wa.me/916387951093?text=Order: French Fries" class="order-btn">Order</a></div>
+
+        </div>
+
+
+
+        <div class="item-card">
+
+            <img src="https://www.mygingergarlickitchen.com/wp-content/rich-markup-images/1x1/1x1-steamed-veg-momos-spicy-chili-chutney-vegetable-momos-recipe-video.jpg" alt="Momos">
+
+            <div class="item-info"><h3>Veg Momos (10pc)</h3><div class="price">₹80</div><a href="https://wa.me/916387951093?text=Order: Momos" class="order-btn">Order</a></div>
+
+        </div>
+
+
+
+        <div class="item-card">
+
+            <img src="https://myfoodstory.com/wp-content/uploads/2022/06/Veg-Spring-Rolls-2.jpg" alt="Spring Roll">
+
+            <div class="item-info"><h3>Veg Spring Roll</h3><div class="price">₹90</div><a href="https://wa.me/916387951093?text=Order: Spring Roll" class="order-btn">Order</a></div>
+
+        </div>
+
+
+
+        <div class="item-card">
+
+            <img src="https://bhojmasale.com/cdn/shop/articles/delicious-pav-bhaji-recipe-a-step-by-step-guide-930907_1024x1024.webp?v=1739152900" alt="Pav Bhaji">
+
+            <div class="item-info"><h3>Pav Bhaji</h3><div class="price">₹100</div><a href="https://wa.me/916387951093?text=Order: Pav Bhaji" class="order-btn">Order</a></div>
+
+        </div>
+
+
+
+        <div class="item-card">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj45NhR_Vj5EHH_4F6VTPK3y_svIjmnlj5Gg&s" alt="Rasmalai">
+
+            <div class="item-info"><h3>Rasmalai (2pc)</h3><div class="price">₹60</div><a href="https://wa.me/916387951093?text=Order: Rasmalai" class="order-btn">Order</a></div>
+
+        </div>
+
+
+
+        <div class="item-card">
+
+            <img src="https://www.yummytummyaarthi.com/wp-content/uploads/2021/11/chicken-lollipop-1.jpeg" alt="Chicken">
+
+            <div class="item-info"><h3>Chicken Lollipop</h3><div class="price">₹220</div><a href="https://wa.me/916387951093?text=Order: Chicken Lollipop" class="order-btn">Order</a></div>
+
+        </div>
+
+
+
+        <div class="item-card">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuDttBX4uGzZ1Y5POXeUaPMkVCYtayAsijVw&s" alt="Rice">
+
+            <div class="item-info"><h3>Veg Fried Rice</h3><div class="price">₹110</div><a href="https://wa.me/916387951093?text=Order: Fried Rice" class="order-btn">Order</a></div>
+
+        </div>
+
+
+
+        <div class="item-card">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAIXY4iL8ucauE1AWVWPsEQPTjDazEwGTrZg&s" alt="Garlic Bread">
+
+            <div class="item-info"><h3>Garlic Bread</h3><div class="price">₹120</div><a href="https://wa.me/916387951093?text=Order: Garlic Bread" class="order-btn">Order</a></div>
+
+        </div>
+
+
+
+        <div class="item-card">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9hdVUkLbGanxjauT5o8yxG1F8byDMXvfyFQ&s" alt="Matar Paneer">
+
+            <div class="item-info"><h3>Matar Paneer</h3><div class="price">₹170</div><a href="https://wa.me/916387951093?text=Order: Matar Paneer" class="order-btn">Order</a></div>
+
+        </div>
+
+
+
+        <div class="item-card">
+
+            <img src="https://jalojog.com/wp-content/uploads/2024/04/Kadai_Chicken.jpg" alt="Kadai Chicken">
+
+            <div class="item-info"><h3>Kadai Chicken</h3><div class="price">₹280</div><a href="https://wa.me/916387951093?text=Order: Kadai Chicken" class="order-btn">Order</a></div>
+
+        </div>
+
+
+
+        <div class="item-card">
+
+            <img src="https://www.shutterstock.com/image-photo/aloo-paratha-flavourful-indian-flatbread-600nw-2547386007.jpg" alt="Paratha">
+
+            <div class="item-info"><h3>Aloo Paratha</h3><div class="price">₹50</div><a href="https://wa.me/916387951093?text=Order: Aloo Paratha" class="order-btn">Order</a></div>
+
+        </div>
+
+
+
+        <div class="item-card">
+
+            <img src="https://fogandfeast.com/wp-content/uploads/2020/04/pistachio-lassi-in-tall-glass.jpg" alt="Lassi">
+
+            <div class="item-info"><h3>Sweet Lassi</h3><div class="price">₹40</div><a href="https://wa.me/916387951093?text=Order: Lassi" class="order-btn">Order</a></div>
+
+        </div>
+
+
+
+        <div class="item-card">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsT8TUD-NzEQeESGXCTvbEFMbcMp-heDW-Kw&s" alt="Kofta">
+
+            <div class="item-info"><h3>Malai Kofta</h3><div class="price">₹190</div><a href="https://wa.me/916387951093?text=Order: Malai Kofta" class="order-btn">Order</a></div>
+
+        </div>
+
+
+
+        <div class="item-card">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf6Eiul5ng8yPi4V67BNpqmPF4BYbLUHDlGQ&s" alt="Chowmein">
+
+            <div class="item-info"><h3>Veg Chowmein</h3><div class="price">₹70</div><a href="https://wa.me/916387951093?text=Order: Chowmein" class="order-btn">Order</a></div>
+
+        </div>
+
+
+
+        <div class="item-card">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvX7zUCDmyK-SpYuh3oM0uiQUPdphrFJBkBQ&s" alt="Roll">
+
+            <div class="item-info"><h3>Paneer Roll</h3><div class="price">₹80</div><a href="https://wa.me/916387951093?text=Order: Paneer Roll" class="order-btn">Order</a></div>
+
+        </div>
+
+
+
+        <div class="item-card">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-sUQXkLe0Wq7Jlx5iMOGiKrXc-P7guoVQYA&s alt="Shahi Paneer">
+
+            <div class="item-info"><h3>Shahi Paneer</h3><div class="price">₹210</div><a href="https://wa.me/916387951093?text=Order: Shahi Paneer" class="order-btn">Order</a></div>
+
+        </div>
+
+
+
+        <div class="item-card">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTOy3su5TRf3odMYaGZ3bcULOk6QrOm70rkw&s" alt="Naan">
+
+            <div class="item-info"><h3>Garlic Naan</h3><div class="price">₹50</div><a href="https://wa.me/916387951093?text=Order: Garlic Naan" class="order-btn">Order</a></div>
+
+        </div>
+
+
+
+        <div class="item-card">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEWyW3wgZ2fZruPsuqKZbu0O5iCz_VIg9OVw&s" alt="Ice Cream">
+
+            <div class="item-info"><h3>Vanilla Ice Cream</h3><div class="price">₹60</div><a href="https://wa.me/916387951093?text=Order: Ice Cream" class="order-btn">Order</a></div>
+
+        </div>
+
+    </div>
+
+
+
+    <footer>
+
+        <h3>Love Restaurant - Machhali Shahar</h3>
+
+        <p>Aapka Swad, Hamari Pehchan | <strong>Mob:</strong> 6387951093</p>
+
+        <p>Chungi Chauraha, Machhali Shahar, UP</p>
+
+        <p style="font-size: 12px; opacity: 0.7;">© 2026 Love Restaurant. All Rights Reserved.</p>
+
+    </footer>
+
+
+
+    <script>
+
+        function searchMenu() {
+
+            let input = document.getElementById('menuSearch').value.toLowerCase();
+
+            let cards = document.getElementsByClassName('item-card');
+
+            for (let i = 0; i < cards.length; i++) {
+
+                let title = cards[i].getElementsByTagName('h3')[0].innerText.toLowerCase();
+
+                cards[i].style.display = title.includes(input) ? "" : "none";
+
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>            add he location in code any one look by google ,add the three lines in side
+
+
+
+You’re close, but “anyone can see location from Google” won’t happen just by writing text—you need a Google Maps link or embed.
+
+
+
+Here are 3 clean lines you can add inside your hero-box or footer so users can click and open location in Google Maps 👇
+
+
+
+✅ Option (Simple Clickable Location)
+
+Add this inside your HTML (e.g., below address):
+
+
+
+<p>📍 Chungi Chauraha, Machhali Shahar</p>
+
+<a href="https://www.google.com/maps?q=Machhali+Shahar+Jaunpur" target="_blank" style="color:yellow; font-weight:bold;">
+
+    View on Google Maps
+
+</a>
+
+<p>🗺️ Easy navigation available for all users</p>
+
+✅ Better Option (More Professional – Button Style)
+
+
+
+
+
+🔥 Best Option (Embed Map – Looks Premium)
+
+Add this in footer or below hero section:
+
+
+
+<iframe
+
+    src="https://www.google.com/maps?q=Machhali+Shahar+Jaunpur&output=embed"
+
+    width="100%"
+
+    height="250"
+
+    style="border:0; border-radius:10px; margin-top:15px;">
+
+</iframe>
+
+⚠️ Small mistake in your code (fix this)
+
+You missed a quote here:
+
+
+
+we can add track location and add payment method online and of line add in code
+
+
+
+✅ Correct:
+
+
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-sUQXkLe0Wq7Jlx5iMOGiKrXc-P7guoVQYA&s" alt="Shahi Paneer">
+
+If you want, I can add live location (exact shop pin) using latitude & longitude so it opens directly at your restaurant
+
+It looks like your code is coming along nicely! To make Love Restaurant truly functional, we need to add the Google Maps location, a "Track My Order" simulation (since real tracking requires a backend), and clear payment options.
+
+Here is the updated code snippet. I have fixed the missing quote in your Shahi Paneer image tag and added the three sections you requested.
+
+1. The Updated HTML Structure
+Add this section inside your footer or right before the </body> tag for the best look:
+
+HTML
+<div style="background: #fff; padding: 30px 20px; text-align: center; border-top: 5px solid #e63946;">
+    
+    <h3 style="color: #1d3557;">📍 Our Location</h3>
+    <p>Chungi Chauraha, Machhali Shahar, Jaunpur</p>
+    <a href="https://www.google.com/maps/search/?api=1&query=Love+Restaurant+Machhali+Shahar" target="_blank" 
+       style="background: #4285F4; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block; margin-bottom: 20px;">
+       Open in Google Maps
+    </a>
+
+    <hr style="width: 50%; border: 0.5px solid #eee; margin: 20px auto;">
+
+    <h3 style="color: #1d3557;">💳 Payment Options</h3>
+    <div style="font-size: 16px; color: #555; margin-bottom: 20px;">
+        <span style="border: 1px solid #25D366; padding: 5px 10px; border-radius: 5px; margin: 5px; display: inline-block;">✅ Online (PhonePe/GPay/UPI)</span>
+        <span style="border: 1px solid #e63946; padding: 5px 10px; border-radius: 5px; margin: 5px; display: inline-block;">💵 Cash on Delivery (Offline)</span>
+    </div>
+
+    <hr style="width: 50%; border: 0.5px solid #eee; margin: 20px auto;">
+
+    <h3 style="color: #1d3557;">🚚 Track Your Order</h3>
+    <button onclick="trackOrder()" style="background: #1d3557; color: white; border: none; padding: 10px 25px; border-radius: 25px; cursor: pointer;">
+        Track Live Status
+    </button>
+    <p id="trackStatus" style="margin-top: 15px; font-weight: bold; color: #e63946;"></p>
+</div>
+2. The Logic (JavaScript)
+Add this function inside your existing <script> tag at the bottom of your file to handle the "Track Order" button:
+
+JavaScript
+function trackOrder() {
+    const statusBox = document.getElementById('trackStatus');
+    statusBox.innerText = "Searching for your active order... 🔍";
+    
+    // Simulate tracking steps
+    setTimeout(() => { statusBox.innerText = "Order Confirmed by Love Restaurant! ✅"; }, 2000);
+    setTimeout(() => { statusBox.innerText = "Food is being prepared in the kitchen... 👨‍🍳"; }, 4000);
+    setTimeout(() => { statusBox.innerText = "Delivery partner is on the way! 🛵 (ETA: 15 Mins)"; }, 7000);
+}
+Key Improvements Made:
+Google Maps: I used a dynamic Google Maps URL. If you have a specific "Plus Code" or exact Latitude/Longitude, you can swap it in for 100% accuracy.
+
+Payment Visibility: Added clear tags for Online and Offline payments so customers feel secure.
+
+Order Tracking: Since a static HTML file can't "know" where the driver is, I added a simulation script that gives the user a professional "Live Update" experience.
+
+Bug Fix: I fixed the broken img tag for Shahi Paneer you had in your original code (missing closing quotes).
+
+Pro Tip: For the Online Payment, since you are using WhatsApp ordering, tell your customers in the WhatsApp message: "Aap UPI (6387951093) se payment kar sakte hain ya Delivery par cash de sakte hain."
+
+Does this layout work for your vision, or should we add a specific QR code for the payments?
+
+<body>
+
+
+
+
+
+    <div class="search-container">
+
+        <input type="text" id="menuSearch" placeholder="Search dish name (e.g. Pizza, Paneer...)" onkeyup="searchMenu()">
+
+    </div>
+
+
+
+    <h2 class="menu-title">Hamara Menu (30 Varieties)</h2>
+
+
+
+    <div class="container" id="menuItems">
+
+        <div class="item-card">
+
+            <img src="https://salasdaily.com/cdn/shop/products/doublecheeseburstpizza_460x@2x.jpg?v=1669967224" alt="Pizza">
+
+            <div class="item-info"><h3>Cheese Burst Pizza</h3><div class="price">₹199</div><a href="https://wa.me/916387951093?text=Order: Cheese Burst Pizza" class="order-btn">Order on WhatsApp</a></div>
+
+        </div>
+
+
+
+        <div class="item-card">
+
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/059/003/702/small/a-plate-of-chicken-biryani-with-carrots-and-parsley-photo.jpg" alt="Biryani">
+
+            <div class="item-info"><h3>Hyderabadi Biryani</h3><div class="price">₹249</div><a href="https://wa.me/916387951093?text=Order: Hyderabadi Biryani" class="order-btn">Order on WhatsApp</a></div>
+
+        </div>
+
+
+
+        <div class="item-card">
+
+            <img src="https://ministryofcurry.com/wp-content/uploads/2021/01/Paneer-Tikka_-2-1.jpg" alt="Paneer">
+
+            <div class="item-info"><h3>Paneer Tikka Masala</h3><div class="price">₹180</div><a href="https://wa.me/916387951093?text=Order: Paneer Tikka" class="order-btn">Order on WhatsApp</a></div>
+
+        </div>
+
+
+
+        <div class="item-card">
+
+            <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=400" alt="Burger">
+
+            <div class="item-info"><h3>Veg Maharaja Burger</h3><div class="price">₹99</div><a href="https://wa.me/916387951093?text=Order: Burger" class="order-btn">Order on WhatsApp</a></div>
+
+        </div>
+
+
+
+        <div class="item-card">
+
+            <img src="https://images.unsplash.com/photo-1585032226651-759b368d7246?w=400" alt="Noodles">
+
+            <div class="item-info"><h3>Hakka Noodles</h3><div class="price">₹120</div><a href="https://wa.me/916387951093?text=Order: Noodles" class="order-btn">Order on WhatsApp</a></div>
+
+        </div>
+
+
+
+        <div class="item-card">
+
+            <img src="https://www.shutterstock.com/image-photo/chole-bhature-chick-pea-curry-600nw-2532258639.jpg" alt="Chhole Bhature">
+
+            <div class="item-info"><h3>Chhole Bhature</h3><div class="price">₹80</div><a href="https://wa.me/916387951093?text=Order: Chhole Bhature" class="order-btn">Order</a></div>
+
+        </div>
+
+
+
+        <div class="item-card">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQJqkbzZy78QS-DErP6QJ3qMbbGcRASnNTMw&s" alt="Dosa">
+
+            <div class="item-info"><h3>Masala Dosa</h3><div class="price">₹110</div><a href="https://wa.me/916387951093?text=Order: Dosa" class="order-btn">Order</a></div>
+
+        </div>
+
+
+
+        <div class="item-card">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlkFd6tFkdSgliBDWB_YAmznZGdkAvYvT9lQ&s" alt="Gulab Jamun">
+
+            <div class="item-info"><h3>Gulab Jamun (2pc)</h3><div class="price">₹40</div><a href="https://wa.me/916387951093?text=Order: Gulab Jamun" class="order-btn">Order</a></div>
+
+        </div>
+
+
+
+        <div class="item-card">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz3N38vUstZYbH1dO3xNXG6DtZJEMIonF8_A&s" alt="Coffee">
+
+            <div class="item-info"><h3>Cold Coffee</h3><div class="price">₹70</div><a href="https://wa.me/916387951093?text=Order: Cold Coffee" class="order-btn">Order</a></div>
+
+        </div>
+
+
+
+        <div class="item-card">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCO9FqmSMQaSIUpdusOg5AIlqKf3lXH13Afw&s" alt="Manchurian">
+
+            <div class="item-info"><h3>Veg Manchurian</h3><div class="price">₹140</div><a href="https://wa.me/916387951093?text=Order: Manchurian" class="order-btn">Order</a></div>
+
+        </div>
+
+
+
+        <div class="item-card">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCnrz4-QPq10DZN1kHeJII6n-ETvwnGLTDvA&s" alt="Butter Chicken">
+
+            <div class="item-info"><h3>Butter Chicken</h3><div class="price">₹320</div><a href="https://wa.me/916387951093?text=Order: Butter Chicken" class="order-btn">Order</a></div>
+
+        </div>
+
+
+
+        <div class="item-card">
+
+            <img src="https://www.shutterstock.com/image-photo/dal-makhani-indian-vegetarian-black-600nw-2244690977.jpg" alt="Dal">
+
+            <div class="item-info"><h3>Dal Makhani</h3><div class="price">₹160</div><a href="https://wa.me/916387951093?text=Order: Dal Makhani" class="order-btn">Order</a></div>
+
+        </div>
+
+
+
+        <div class="item-card">
+
+            <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=400" alt="Fries">
+
+            <div class="item-info"><h3>French Fries</h3><div class="price">₹70</div><a href="https://wa.me/916387951093?text=Order: French Fries" class="order-btn">Order</a></div>
+
+        </div>
+
+
+
+        <div class="item-card">
+
+            <img src="https://www.mygingergarlickitchen.com/wp-content/rich-markup-images/1x1/1x1-steamed-veg-momos-spicy-chili-chutney-vegetable-momos-recipe-video.jpg" alt="Momos">
+
+            <div class="item-info"><h3>Veg Momos (10pc)</h3><div class="price">₹80</div><a href="https://wa.me/916387951093?text=Order: Momos" class="order-btn">Order</a></div>
+
+        </div>
+
+
+
+        <div class="item-card">
+
+            <img src="https://myfoodstory.com/wp-content/uploads/2022/06/Veg-Spring-Rolls-2.jpg" alt="Spring Roll">
+
+            <div class="item-info"><h3>Veg Spring Roll</h3><div class="price">₹90</div><a href="https://wa.me/916387951093?text=Order: Spring Roll" class="order-btn">Order</a></div>
+
+        </div>
+
+
+
+        <div class="item-card">
+
+            <img src="https://bhojmasale.com/cdn/shop/articles/delicious-pav-bhaji-recipe-a-step-by-step-guide-930907_1024x1024.webp?v=1739152900" alt="Pav Bhaji">
+
+            <div class="item-info"><h3>Pav Bhaji</h3><div class="price">₹100</div><a href="https://wa.me/916387951093?text=Order: Pav Bhaji" class="order-btn">Order</a></div>
+
+        </div>
+
+
+
+        <div class="item-card">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj45NhR_Vj5EHH_4F6VTPK3y_svIjmnlj5Gg&s" alt="Rasmalai">
+
+            <div class="item-info"><h3>Rasmalai (2pc)</h3><div class="price">₹60</div><a href="https://wa.me/916387951093?text=Order: Rasmalai" class="order-btn">Order</a></div>
+
+        </div>
+
+
+
+        <div class="item-card">
+
+            <img src="https://www.yummytummyaarthi.com/wp-content/uploads/2021/11/chicken-lollipop-1.jpeg" alt="Chicken">
+
+            <div class="item-info"><h3>Chicken Lollipop</h3><div class="price">₹220</div><a href="https://wa.me/916387951093?text=Order: Chicken Lollipop" class="order-btn">Order</a></div>
+
+        </div>
+
+
+
+        <div class="item-card">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuDttBX4uGzZ1Y5POXeUaPMkVCYtayAsijVw&s" alt="Rice">
+
+            <div class="item-info"><h3>Veg Fried Rice</h3><div class="price">₹110</div><a href="https://wa.me/916387951093?text=Order: Fried Rice" class="order-btn">Order</a></div>
+
+        </div>
+
+
+
+        <div class="item-card">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAIXY4iL8ucauE1AWVWPsEQPTjDazEwGTrZg&s" alt="Garlic Bread">
+
+            <div class="item-info"><h3>Garlic Bread</h3><div class="price">₹120</div><a href="https://wa.me/916387951093?text=Order: Garlic Bread" class="order-btn">Order</a></div>
+
+        </div>
+
+
+
+        <div class="item-card">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9hdVUkLbGanxjauT5o8yxG1F8byDMXvfyFQ&s" alt="Matar Paneer">
+
+            <div class="item-info"><h3>Matar Paneer</h3><div class="price">₹170</div><a href="https://wa.me/916387951093?text=Order: Matar Paneer" class="order-btn">Order</a></div>
+
+        </div>
+
+
+
+        <div class="item-card">
+
+            <img src="https://jalojog.com/wp-content/uploads/2024/04/Kadai_Chicken.jpg" alt="Kadai Chicken">
+
+            <div class="item-info"><h3>Kadai Chicken</h3><div class="price">₹280</div><a href="https://wa.me/916387951093?text=Order: Kadai Chicken" class="order-btn">Order</a></div>
+
+        </div>
+
+
+
+        <div class="item-card">
+
+            <img src="https://www.shutterstock.com/image-photo/aloo-paratha-flavourful-indian-flatbread-600nw-2547386007.jpg" alt="Paratha">
+
+            <div class="item-info"><h3>Aloo Paratha</h3><div class="price">₹50</div><a href="https://wa.me/916387951093?text=Order: Aloo Paratha" class="order-btn">Order</a></div>
+
+        </div>
+
+
+
+        <div class="item-card">
+
+            <img src="https://fogandfeast.com/wp-content/uploads/2020/04/pistachio-lassi-in-tall-glass.jpg" alt="Lassi">
+
+            <div class="item-info"><h3>Sweet Lassi</h3><div class="price">₹40</div><a href="https://wa.me/916387951093?text=Order: Lassi" class="order-btn">Order</a></div>
+
+        </div>
+
+
+
+        <div class="item-card">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsT8TUD-NzEQeESGXCTvbEFMbcMp-heDW-Kw&s" alt="Kofta">
+
+            <div class="item-info"><h3>Malai Kofta</h3><div class="price">₹190</div><a href="https://wa.me/916387951093?text=Order: Malai Kofta" class="order-btn">Order</a></div>
+
+        </div>
+
+
+
+        <div class="item-card">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf6Eiul5ng8yPi4V67BNpqmPF4BYbLUHDlGQ&s" alt="Chowmein">
+
+            <div class="item-info"><h3>Veg Chowmein</h3><div class="price">₹70</div><a href="https://wa.me/916387951093?text=Order: Chowmein" class="order-btn">Order</a></div>
+
+        </div>
+
+
+
+        <div class="item-card">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvX7zUCDmyK-SpYuh3oM0uiQUPdphrFJBkBQ&s" alt="Roll">
+
+            <div class="item-info"><h3>Paneer Roll</h3><div class="price">₹80</div><a href="https://wa.me/916387951093?text=Order: Paneer Roll" class="order-btn">Order</a></div>
+
+        </div>
+
+
+
+        <div class="item-card">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-sUQXkLe0Wq7Jlx5iMOGiKrXc-P7guoVQYA&s alt="Shahi Paneer">
+
+            <div class="item-info"><h3>Shahi Paneer</h3><div class="price">₹210</div><a href="https://wa.me/916387951093?text=Order: Shahi Paneer" class="order-btn">Order</a></div>
+
+        </div>
+
+
+
+        <div class="item-card">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTOy3su5TRf3odMYaGZ3bcULOk6QrOm70rkw&s" alt="Naan">
+
+            <div class="item-info"><h3>Garlic Naan</h3><div class="price">₹50</div><a href="https://wa.me/916387951093?text=Order: Garlic Naan" class="order-btn">Order</a></div>
+
+        </div>
+
+
+
+        <div class="item-card">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEWyW3wgZ2fZruPsuqKZbu0O5iCz_VIg9OVw&s" alt="Ice Cream">
+
+            <div class="item-info"><h3>Vanilla Ice Cream</h3><div class="price">₹60</div><a href="https://wa.me/916387951093?text=Order: Ice Cream" class="order-btn">Order</a></div>
+
+        </div>
+
+    </div>
+
+
+
+    <footer>
+
+        <h3>Love Restaurant - Machhali Shahar</h3>
+
+        <p>Aapka Swad, Hamari Pehchan | <strong>Mob:</strong> 6387951093</p>
+
+        <p>Chungi Chauraha, Machhali Shahar, UP</p>
+
+        <p style="font-size: 12px; opacity: 0.7;">© 2026 Love Restaurant. All Rights Reserved.</p>
+
+    </footer>
+
+
+
+    <script>
+
+        function searchMenu() {
+
+            let input = document.getElementById('menuSearch').value.toLowerCase();
+
+            let cards = document.getElementsByClassName('item-card');
+
+            for (let i = 0; i < cards.length; i++) {
+
+                let title = cards[i].getElementsByTagName('h3')[0].innerText.toLowerCase();
+
+                cards[i].style.display = title.includes(input) ? "" : "none";
+
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>            add he location in code any one look by google ,add the three lines in side
+
+
+
+You’re close, but “anyone can see location from Google” won’t happen just by writing text—you need a Google Maps link or embed.
+
+
+
+Here are 3 clean lines you can add inside your hero-box or footer so users can click and open location in Google Maps 👇
+
+
+
+✅ Option (Simple Clickable Location)
+
+Add this inside your HTML (e.g., below address):
+
+
+
+<p>📍 Chungi Chauraha, Machhali Shahar</p>
+
+<a href="https://www.google.com/maps?q=Machhali+Shahar+Jaunpur" target="_blank" style="color:yellow; font-weight:bold;">
+
+    View on Google Maps
+
+</a>
+
+<p>🗺️ Easy navigation available for all users</p>
+
+✅ Better Option (More Professional – Button Style)
+
+
+
+
+
+🔥 Best Option (Embed Map – Looks Premium)
+
+Add this in footer or below hero section:
+
+
+
+<iframe
+
+    src="https://www.google.com/maps?q=Machhali+Shahar+Jaunpur&output=embed"
+
+    width="100%"
+
+    height="250"
+
+    style="border:0; border-radius:10px; margin-top:15px;">
+
+</iframe>
+
+⚠️ Small mistake in your code (fix this)
+
+You missed a quote here:
+
+
+
+
+
+
+
+✅ Correct:
+
+
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-sUQXkLe0Wq7Jlx5iMOGiKrXc-P7guoVQYA&s" alt="Shahi Paneer">
+
+<div style="background: #fff; padding: 30px 20px; text-align: center; border-top: 5px solid #e63946;">
+
+   
+
+    <h3 style="color: #1d3557;">📍 Our Location</h3>
+
+    <p>Chungi Chauraha, Machhali Shahar, Jaunpur</p>
+
+    <a href="https://www.google.com/maps/search/?api=1&query=Love+Restaurant+Machhali+Shahar" target="_blank"
+
+       style="background: #4285F4; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block; margin-bottom: 20px;">
+
+       Open in Google Maps
+
+    </a>
+
+
+
+    <hr style="width: 50%; border: 0.5px solid #eee; margin: 20px auto;">
+
+
+
+    <h3 style="color: #1d3557;">💳 Payment Options</h3>
+
+    <div style="font-size: 16px; color: #555; margin-bottom: 20px;">
+
+        <span style="border: 1px solid #25D366; padding: 5px 10px; border-radius: 5px; margin: 5px; display: inline-block;">✅ Online (PhonePe/GPay/UPI)</span>
+
+        <span style="border: 1px solid #e63946; padding: 5px 10px; border-radius: 5px; margin: 5px; display: inline-block;">💵 Cash on Delivery (Offline)</span>
+    <hr style="width: 50%; border: 0.5px solid #eee; margin: 20px auto;">
+
+
+
+    <h3 style="color: #1d3557;">🚚 Track Your Order</h3>
+
+    <button onclick="trackOrder()" style="background: #1d3557; color: white; border: none; padding: 10px 25px; border-radius: 25px; cursor: pointer;">
+
+        Track Live Status
+
+</div>
+
+<!--Add the QR code open qr code and track order and add at the zomato any and swiggy Order any human then make a chose payment option-->
+
